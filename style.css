@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'lato', sans serif;
+    background:#ffd384 ;/*#57837B; /*#A03C78 #005792 #9C3D54 #9F5F80 #FFD384 #E1E5EA     */
+    
+}
+        /* Nav bar items */
+nav{
+    background-color: #C84B31;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 3px solid #9c3d54;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+nav a{
+    color: white;
+    position: relative;
+    margin-left: 20px;
+    text-decoration: none;
+}
+nav a::after{
+    content: '';
+    border-bottom: 3px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(10px);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+nav a:hover::after{
+    opacity: 1;
+    transform: translate(0);
+    
+}
+nav img{
+    display: flex;
+    float: left;
+    justify-content: left;
+    width: 200%;
+    height: 100%;
+}
+        /* end of Nav bar items */
+
+        /* Header items */
+header{
+    background-image: url(./img/web3.jpg);
+    background-size: cover;
+    height: 100vh; 
+    background-position: center center;
+    position: relative; 
+    color: rgba(255, 255, 255, 0.856);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    
+}
+header h1{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 0 ;
+    padding: 0;
+    bottom: -50px;
+    text-shadow: 10px 10px 1px  rgba(0,0,0,0.6);
+    font-weight: 1000;
+    
+    
+    
+}
+
+
+header .welcome-section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 50px;
+    
+    
+   
+}
+/* styling words */
+header .my-image img{
+    opacity: 0.04;
+}
+header .my-image img:hover{
+    opacity: 1;
+    transition:opacity 2s;
+    animation: fadeout 2s;
+}
+
+header .name{
+    color: #C84B31;
+}
+header .html , section h1 a .c{
+    color:rgb(27, 27, 250);
+     transition: transform 0.3s ease;
+     cursor: pointer;
+     display:inline-flex;
+     justify-content: center;
+     
+     
+}
+header .html:hover{
+    transform: scale(1.05);
+}
+header .css , section h1 a .e{
+    color: yellowgreen;
+     transition: transform 0.3s ease;
+     cursor: pointer;
+     display:inline-flex;
+     justify-content: center;
+}
+header .css:hover{
+    transform: scale(1.05);
+}
+header .js , section h1 a .j{
+    color: red;
+     transition: transform 0.3s ease;
+     cursor: pointer;
+     display:inline-flex;
+     justify-content: center;
+}
+header .js:hover{
+    transform: scale(1.05);
+}
+header .node , section h1 a .o{
+    color: orange;
+     transition: transform 0.3s ease;
+     cursor: pointer;
+     display:inline-flex;
+     justify-content: center;
+}
+header .node:hover{
+    transform: scale(1.05);
+}
+header .angular , section h1 a .r{
+    color: cornflowerblue;
+     transition: transform 0.3s ease;
+     cursor: pointer;
+     display:inline-flex;
+     justify-content: center;
+}
+header .angular:hover{
+    transform: scale(1.05);
+}
+
+header .api , section h1 a .p, .s{
+    color: deeppink;
+     transition: transform 0.3s ease;
+     cursor: pointer;
+     display:inline-flex;
+     justify-content: center;
+}
+header .api:hover{
+    transform: scale(1.05);
+}
+header .web , section h1 a .t{
+    color: #C84B31;
+}
+section h1 a{
+    color: white;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* branding */
+header h1{
+    font-size: 70px;
+    margin-bottom: 500px;
+}
+header p{
+    font-size: 30px;
+    margin: 0;
+}
+header::after{
+content: '';
+background-color: black;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+opacity: 0.7;
+}
+header *{
+    position: relative;
+    z-index: 1;
+}
+
+        /* Footer items */
+footer{
+    background-color: #C84B31;
+    color: white;
+    padding: 10px;
+}
+
+footer .fa-heart{
+    color: red;
+}
+/* projects area */
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 810px;
+    margin: 20px auto 0;
+    
+    
+    
+}
+.projects{
+    color: black;
+    margin: 10px;
+    max-width: 250px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.projects:hover{
+    transform: scale(1.05);
+}
+.projects p{
+    font-size: 20px;
+}
+.projects img{
+    max-width: 100%;
+}
+
+
+/* social media items */
+section{
+    padding: 40px;
+    text-align: center;
+}
+section h2{
+    margin: 0;
+}
+section p{
+margin-top: 0;
+}
+.bg{
+background:#9c3d54 ;/*#57837B; /*#A03C78 #005792 #9C3D54 #9F5F80 #FFD384 #E1E5EA     */
+color: antiquewhite;
+
+}
+.social-ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.social-ul a{
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+}
+:root{
+    --yellow: #f6e767;
+    --white: #f6f7f8;
+    --black: #2c2e31;
+}
+
+
+@media (max-width:1024px){
+section {
+    padding: 20px;
+    width: 100%;
+    }
+     header h1{
+        bottom: 860px;
+         display: inline-block;
+         width: 100%;
+         margin: 0px 0px 0px 0px;
+    }
+}
+@media (max-width:640px){
+section {
+    padding: 20px;
+    width: 100%;
+    }
+     header h1{
+        bottom: 500px;
+         display: inline-block;
+         width: 100%;
+         margin: 0px 0px 0px 0px;
+    }
+}

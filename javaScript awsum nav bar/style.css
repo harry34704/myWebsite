@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    font-family: sans-serif;
+}
+header{
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0px;
+    background: white;
+}
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1, nav ul{
+    font-size: 1.5rem;
+    flex: 1;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+section{
+    min-height: 100vh; /* to have some space going on */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+section h2{
+    font-size: 5rem;
+    color: white;
+
+}
+
+.home{
+    background: linear-gradient(to right top, #f46b45, #eea849);
+}
+.project{
+    background: linear-gradient(to right top, #005c97, #363795);
+}
+.contact{
+    background: linear-gradient(to right top, #e53935, #e35d5b);
+}
+.bubble{
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(to right top, #f46b45, #eea849);
+    transform: scale(2);
+    transition: all 0.5s;
+    border-radius: 10px;
+
+}
+
+form{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+
+}
+
+#signup{
+    color: #0a0538;
+    font-size: 1.5rem;
+}
